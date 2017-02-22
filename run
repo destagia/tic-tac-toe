@@ -1,4 +1,4 @@
-#!/bin/usr/env python
+#!/usr/bin/env python
 
 import tic
 
@@ -9,3 +9,11 @@ game = tic.Game(player_1, player_2)
 
 while game.next():
     game.show()
+
+
+if game.winner == player_1:
+    print('Player 1 won!')
+elif game.winner == player_2:
+    print('Player 2 won!')
+else:
+    print('Draw!')
