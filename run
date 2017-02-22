@@ -1,0 +1,11 @@
+#!/bin/usr/env python
+
+import tic
+
+player_1 = tic.RandomPlayer()
+player_2 = tic.RandomPlayer()
+
+game = tic.Game(player_1, player_2)
+
+while game.next():
+    game.show()
